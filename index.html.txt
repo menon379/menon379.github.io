@@ -1,0 +1,254 @@
+I understand you can only see the chat interface. Let me provide you with the complete HTML code that you can use to view your portfolio website:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #ecf0f1;
+            --accent-color: #3498db;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 1rem auto;
+            display: block;
+        }
+
+        .contact-info {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .body-content {
+            padding: 2rem;
+            background-color: var(--secondary-color);
+        }
+
+        .experience-section {
+            margin-bottom: 2rem;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            columns: 2;
+            gap: 1rem;
+        }
+
+        .skills-list li {
+            padding: 0.5rem;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        .opportunities-section {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 2rem;
+        }
+
+        .message-form {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .message-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .message-form button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .message-form button:hover {
+            background-color: #2980b9;
+        }
+
+        .achievements-section {
+            margin-bottom: 2rem;
+        }
+
+        .achievements-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .achievement-item {
+            padding: 1rem;
+            background-color: white;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        .experience-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .experience-item ul {
+            list-style-position: inside;
+            padding-left: 1.5rem;
+        }
+
+        .experience-item li {
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-section {
+            margin-bottom: 2rem;
+        }
+
+        .skills-list {
+            margin-top: 1rem;
+        }
+
+        .education-section {
+            margin-bottom: 2rem;
+        }
+
+        .education-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        .certifications-section {
+            margin-bottom: 2rem;
+        }
+
+        .certifications-list {
+            list-style-position: inside;
+            padding-left: 1.5rem;
+        }
+
+        .certifications-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .achievements-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-list {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="profile-photo.jpg" alt="Profile Photo" class="profile-image">
+        <h1>Saurabh Menon</h1>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:menonsaurabhj@gmail.com">menonsaurabhj@gmail.com</a></p>
+            <p>Phone: <a href="tel:+917550263562">+91 755 026 3562</a></p>
+            <p>Location: <a href="https://maps.google.com/maps?q=Kozhikode,+India+(St+Vincent+Colony)">India</a></p>
+            <p><a href="https://www.linkedin.com/in/saurabhmenonj/">LinkedIn Profile</a></p>
+        </div>
+    </header>
+
+    <main class="body-content">
+        <section class="achievements-section">
+            <h2>Key Achievements</h2>
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <h3>77M Monthly Page Views</h3>
+                    <p>Scaled The Hindu's digital platform to 77 million monthly page views, achieving 125% YoY growth with 200,000+ new users/month</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>125% User Growth</h3>
+                    <p>Drove 125% month-over-month user growth for B2B SaaS platforms, increasing Net Promoter Score (NPS) by 10+ points through data-driven enhancements</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>70% SEO Boost</h3>
+                    <p>Boosted SEO performance by 70% via site architecture redesign and targeted content strategy</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>66% Escalation Reduction</h3>
+                    <p>Reduced customer support escalations by 66% (from 12% to 4%) and improved billing accuracy by 15% through process improvements and team mentoring</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience-section">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <h3><a href="https://www.thehindu.com/">The Hindu</a> — Senior Associate Product Manager</h3>
+                <p>Chennai, India | June 2022 – Aug 2025</p>
+                <ul>
+                    <li>Led 0-to-1 product development roadmaps for initiatives reaching 20+ million active monthly users</li>
+                    <li>Delivered 125% growth in monthly page views to reach 77 million through data-driven personalization and enhanced user experience</li>
+                    <li>Increased new user acquisition by 200,000+/month via targeted feature improvements and optimized onboarding flows</li>
+                    <li>Improved average session duration by 95% leveraging interactive features informed by user analytics</li>
+                    <li>Coordinated 10+ digital projects with cross-functional teams using Agile and Scrum methodologies</li>
+                    <li>Enhanced SEO performance by 70%, driving higher organic traffic through comprehensive site architecture and content strategy redesign</li>
+                    <li>Managed 12 stable app releases/month, ensuring smooth deployment and user satisfaction</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3><a href="https://vakilsearch.com/">Vakilsearch (Zolvit)</a> — Assistant Manager, Product Operations</h3>
+                <p>Chennai, India | Aug 2020 – Jun 2022</p>
+                <ul>
+                    <li>Built and managed a 7-member team delivering automated conversational features, improving user experience and response accuracy
+```
