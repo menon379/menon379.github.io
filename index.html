@@ -115,6 +115,60 @@
 				text-align: center;
 				margin: 30px 0;
 			}
+			.skills-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 15px;
+				margin-top: 20px;
+			}
+			.skill-category {
+				background: rgba(0, 0, 0, 0.03);
+				padding: 15px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.skill-category h4 {
+				margin-top: 0;
+				color: #4c5c96;
+				border-bottom: 1px solid #ddd;
+				padding-bottom: 8px;
+			}
+			.contact-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 20px;
+			}
+			.footer-social {
+				display: flex;
+				justify-content: center;
+				gap: 15px;
+				margin-top: 10px;
+			}
+			.footer-social a {
+				color: #fff;
+				font-size: 1.2rem;
+			}
+			.contact-content {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+			.contact-main {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 20px;
+			}
+			@media screen and (max-width: 768px) {
+				.contact-main {
+					grid-template-columns: 1fr;
+				}
+				.contact-header {
+					flex-direction: column;
+					text-align: center;
+					gap: 15px;
+				}
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -194,15 +248,16 @@
 											<div class="portfolio-icon">
 												<i class="fas fa-newspaper"></i>
 											</div>
-											<h4>Digital Platform Scaling</h4>
-											<p>Scaled The Hindu's digital platform to 77M monthly page views with 125% YoY growth.</p>
+											<h4>The Hindu BrandHub</h4>
+											<p>Created and launched The Hindu's BrandHub platform, providing a comprehensive advertising solution for brands.</p>
+											<p><a href="https://www.thehindu.com/brandhub/" target="_blank">View Project</a></p>
 										</div>
 										<div class="portfolio-item">
 											<div class="portfolio-icon">
 												<i class="fas fa-chart-line"></i>
 											</div>
-											<h4>Retention Optimization</h4>
-											<p>Increased user retention by 75% for Vakilsearch's SaaS platform through data-driven enhancements.</p>
+											<h4>CSAT & NPS Improvement</h4>
+											<p>Improved Customer Satisfaction (CSAT) and Net Promoter Score (NPS) at Vakilsearch through process optimization and customer feedback implementation.</p>
 										</div>
 										<div class="portfolio-item">
 											<div class="portfolio-icon">
@@ -313,39 +368,53 @@
 
 						<!-- Contact -->
 							<article id="contact">
-								<h2 class="major">Contact</h2>
-								
-								<div class="contact-info">
-									<p>Let's chat about product management, growth strategies, or potential collaborations!</p>
-									<p class="opportunity-text">I'm always open to discussing new ideas and opportunities.</p>
+								<div class="contact-header">
+									<h2 class="major">Contact</h2>
+									<div>
+										<h3>Connect with me</h3>
+										<ul class="icons">
+											<li><a href="https://www.linkedin.com/in/saurabhmenonj/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+											<li><a href="https://medium.com/@shadowmenon" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+											<li><a href="https://github.com/menon379" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+											<li><a href="mailto:menonsaurabhj@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+										</ul>
+									</div>
 								</div>
 								
-								<div class="contact-methods">
-									<p><strong>Phone:</strong> +91-7550263562</p>
-									<p><strong>Email:</strong> menonsaurabhj@gmail.com</p>
+								<div class="contact-content">
+									<div class="contact-info">
+										<p>Let's chat about product management, growth strategies, or potential collaborations!</p>
+										<p class="opportunity-text">I'm always open to discussing new ideas and opportunities.</p>
+									</div>
+									
+									<div class="contact-main">
+										<div>
+											<h3>Contact Information</h3>
+											<p><strong>Phone:</strong> +91-7550263562</p>
+											<p><strong>Email:</strong> menonsaurabhj@gmail.com</p>
+										</div>
+										
+										<div class="resume-download">
+											<h3>Download My Resume</h3>
+											<p>Want to know more about my experience and skills?</p>
+											<a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:5cb5b70a-e01e-41ca-bb3f-9e8b90711fee" class="resume-btn" target="_blank">
+												Download Resume
+											</a>
+										</div>
+									</div>
 								</div>
-								
-								<div class="resume-download">
-									<h3>Download My Resume</h3>
-									<p>Want to know more about my experience and skills? Download my full resume.</p>
-									<a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:5cb5b70a-e01e-41ca-bb3f-9e8b90711fee" class="resume-btn" target="_blank">
-										Download Resume
-									</a>
-								</div>
-								
-								<h3>Connect with me</h3>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/saurabhmenonj/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://medium.com/@shadowmenon" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-									<li><a href="https://github.com/menon379" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="mailto:menonsaurabhj@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
 							</article>
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<p class="copyright">&copy; Saurabh M, Bengaluru, India. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<div class="footer-social">
+							<a href="https://www.linkedin.com/in/saurabhmenonj/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+							<a href="https://medium.com/@shadowmenon" class="icon brands fa-medium"><span class="label">Medium</span></a>
+							<a href="https://github.com/menon379" class="icon brands fa-github"><span class="label">GitHub</span></a>
+							<a href="mailto:menonsaurabhj@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a>
+						</div>
 					</footer>
 
 			</div>
