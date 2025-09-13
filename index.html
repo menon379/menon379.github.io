@@ -9,7 +9,7 @@
 		<title>Saurabh M - Product Manager Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Saurabh M - Senior Product Manager with expertise in Growth, Strategy, Customer Experience, and Operations" />
+		<meta name="description" content="Saurabh M - Senior Product Manager with expertise in product strategy, growth, and operations" />
 		<meta name="keywords" content="product manager, SaaS, media, entertainment, operations, strategy, growth, portfolio" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -174,17 +174,26 @@
 				color: #4c5c96;
 				margin-bottom: 15px;
 			}
-			.dogs-link {
-				display: inline-block;
-				margin-top: 20px;
-				padding: 10px 20px;
-				background: #4c5c96;
-				color: white;
-				border-radius: 4px;
-				text-decoration: none;
+			.dog-gallery {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 20px;
+				margin: 30px 0;
 			}
-			.dogs-link:hover {
-				background: #3a4879;
+			.dog-image {
+				border-radius: 8px;
+				overflow: hidden;
+				box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			}
+			.dog-image img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			.dog-caption {
+				padding: 15px;
+				text-align: center;
+				background: rgba(0, 0, 0, 0.03);
 			}
 			@media screen and (max-width: 768px) {
 				.contact-main {
@@ -194,6 +203,9 @@
 					flex-direction: column;
 					text-align: center;
 					gap: 15px;
+				}
+				.dog-gallery {
+					grid-template-columns: 1fr;
 				}
 			}
 		</style>
@@ -211,7 +223,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Saurabh M</h1>
-								<p>Senior Product Manager | Growth & Strategy | Customer Experience | Operations</p>
+								<p>Senior Product Manager</p>
 							</div>
 						</div>
 						<nav>
@@ -253,8 +265,6 @@
 								</ul>
 								
 								<p><strong>Languages:</strong> English (C2), Hindi (C1), Malayalam (C1), Tamil (A2), French (A1)</p>
-								
-								<a href="#dogs" class="dogs-link">Meet My Dogs</a>
 							</article>
 
 						<!-- Achievements -->
@@ -399,18 +409,13 @@
 									<h3>Case Studies</h3>
 									
 									<div class="case-study">
-										<h4>Case Study 1: US Healthcare - Problem Points and Solutions</h4>
+										<h4>US Healthcare: Problem Points and Solutions</h4>
 										<p>Analyzed the US healthcare system's inefficiencies, focusing on patient data fragmentation, insurance complexities, and accessibility issues. Developed a unified digital platform concept that integrates patient records, simplifies insurance claims, and provides telehealth services. The solution aimed to reduce administrative overhead by 40% and improve patient outcomes through better care coordination.</p>
 									</div>
 									
 									<div class="case-study">
-										<h4>Case Study 2: Food Industry in India - A Never Ending Miracle</h4>
+										<h4>Food Industry in India: A Never Ending Miracle</h4>
 										<p>Explored the evolution of India's food industry from traditional supply chains to modern tech-enabled platforms. Examined how digital transformation has enabled farm-to-fork traceability, reduced food waste by 30%, and created new market access for small farmers. The study highlighted opportunities for AI-driven demand forecasting and sustainable packaging solutions to address ongoing challenges.</p>
-									</div>
-									
-									<div class="case-study">
-										<h4>Case Study 3: Cybersecurity During the Age of AI</h4>
-										<p>Investigated the dual role of AI in cybersecurity - as both a threat and a defense mechanism. Developed a framework for implementing AI-powered security systems that can predict, detect, and respond to threats in real-time. The study emphasized the importance of ethical AI governance and human oversight in security systems, proposing a balanced approach that leverages AI while maintaining critical human decision-making.</p>
 									</div>
 								</div>
 							</article>
@@ -457,11 +462,18 @@
 						<!-- Dogs -->
 							<article id="dogs">
 								<h2 class="major">My Dogs</h2>
-								<span class="image main"><img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Happy dogs" /></span>
-								<p>Meet my furry companions who bring joy, laughter, and unconditional love to my life every day. They're not just pets; they're family members who have taught me valuable lessons about patience, responsibility, and living in the moment.</p>
+								
+								<div class="dog-gallery">
+									<div class="dog-image">
+										<img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="My furry companions" />
+										<div class="dog-caption">My two furry friends enjoying the outdoors</div>
+									</div>
+								</div>
+								
+								<p>Meet my two furry companions who bring joy, laughter, and unconditional love to our life every day. They're not just pets; they're family members who have taught me valuable lessons about patience, responsibility, and living in the moment.</p>
 								
 								<h3>My Canine Family</h3>
-								<p>I'm fortunate to share my home with two wonderful dogs who each have their own unique personalities and quirks. They're my constant companions during work-from-home days and my enthusiastic exercise partners on weekends.</p>
+								<p>I'm fortunate to share my home with two wonderful dogs who each have their own unique personalities and quirks. They're my constant companions and love just being around each other.</p>
 								
 								<h3>Why Dogs Matter</h3>
 								<p>Beyond being wonderful companions, dogs have taught me important lessons that apply to product management and life:</p>
@@ -471,6 +483,13 @@
 									<li><strong>Adaptability:</strong> Adjusting to different personalities and needs</li>
 									<li><strong>Work-life balance:</strong> Remembering to step away and enjoy simple moments</li>
 								</ul>
+								
+								<div class="dog-gallery">
+									<div class="dog-image">
+										<img src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=662&q=80" alt="Happy dog" />
+										<div class="dog-caption">Pure joy and happiness</div>
+									</div>
+								</div>
 								
 								<p>If you're a fellow dog lover, I'd love to connect and exchange stories about our four-legged friends!</p>
 							</article>
